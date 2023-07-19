@@ -1,0 +1,68 @@
+/* Layout.css */
+
+.sidebar {
+  /* Add your sidebar styles here */
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.menu {
+  /* Add your menu styles here */
+  margin-top: 20px;
+}
+
+.menu-item {
+  /* Add your menu item styles here */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-link {
+  /* Add your menu link styles here */
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.menu-item.active {
+  /* Add your active menu item styles here */
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.content {
+  /* Add your content styles here */
+  margin-left: 240px; /* Adjust this value to match your sidebar width */
+  padding: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-item {
+    margin-bottom: 5px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
